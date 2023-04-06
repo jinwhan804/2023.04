@@ -80,17 +80,17 @@ const Arr3 = [1,2,30,4,5,15,10];
 // 초기 값을 넣지 않으면 배열의 0번이 초기 값으로 설정된다.
 
 // 두 값을 더하면서 반환 시키는 기능
-// const temp3 = Arr3.reduce(function(acc, value){
-//     // acc 이전 return된 값
-//     console.log("acc : " + acc);
-//     console.log("value : " + value);
-//     console.log(`합 : ${acc + value}`);
-//     if(acc === 33){
-//         return 50;
-//     }else{
-//         return acc + value;
-//     }
-// },0);
+const temp3 = Arr3.reduce(function(acc, value){
+    // acc 이전 return된 값
+    console.log("acc : " + acc);
+    console.log("value : " + value);
+    console.log(`합 : ${acc + value}`);
+    if(acc === 33){
+        return 50;
+    }else{
+        return acc + value;
+    }
+});
 
 // 배열을 순회하면서 제일 큰 값을 반환시켜주는 기능
 const max = Arr3.reduce(function(acc, value){
